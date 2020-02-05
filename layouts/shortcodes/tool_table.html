@@ -1,0 +1,33 @@
+{{ $v1 := .Get "name"}}
+
+<table class="border">
+    <thead>
+        <tr>
+            <th>Tool</th>
+            <th>Safety</th>
+            <th>Training required?</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range where .Site.Pages "Params.area" $v1 }}
+        <tr>
+            <td>
+                <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
+            </td>
+            <td>
+                <span class="badge {{ if eq .Params.danger_level "1" }} info {{ else }} warning{{end}}">
+                    {{ if eq .Params.danger_level "1"}}Safer{{ end }}
+                    {{ if eq .Params.danger_level "2" }}PPE required{{ end }}
+                    {{ if gt .Params.danger_level "2"}}Dangerous{{ end }}
+                </span>
+            </td>
+            <td>
+                <span class="badge {{ if .Params.training_required  }} secondary {{end}}">
+                    {{ if .Params.training_required }} Training required before use {{ else }} Can be usedd without
+                    training {{ end }}
+                </span>
+            </td>
+        </tr>
+        {{ end }}
+    </tbody>
+</table>
