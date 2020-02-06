@@ -1,6 +1,3 @@
-[submodule "themes/papercss-hugo-theme"]
-	path = themes/papercss-hugo-theme
-	url = https://github.com/zwbetz-gh/papercss-hugo-theme.git
 [submodule "themes/hacman-paper"]
 	path = themes/hacman-paper
 	url = https://github.com/conorriches/papercss-hugo-theme.git
