@@ -19,7 +19,7 @@ theme = "hacman-paper"
     weight = 10
   
   [[menu.nav]]
-    name = "Members"
+    name = "Membership"
     external = true
     url = "http://members.hacman.org.uk"
     weight = 20

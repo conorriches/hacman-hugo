@@ -4,7 +4,7 @@
     <thead>
         <tr>
             <th>Tool</th>
-            <th>Safety</th>
+            <th>Precautions</th>
             <th>Training required?</th>
         </tr>
     </thead>
@@ -15,15 +15,17 @@
                 <a href="{{ .RelPermalink }}">{{ .Params.title }}</a>
             </td>
             <td>
-                <span class="badge {{ if eq .Params.danger_level "1" }} info {{ else }} warning{{end}}">
-                    {{ if eq .Params.danger_level "1"}}Safer{{ end }}
+                <span class="badge {{ if eq .Params.danger_level "1" }} info {{end}}
+                {{ if eq .Params.danger_level "2" }} warning {{end}}
+                {{ if gt .Params.danger_level "2" }} danger {{end}}">
+                    {{ if eq .Params.danger_level "1"}}Use with care{{ end }}
                     {{ if eq .Params.danger_level "2" }}PPE required{{ end }}
-                    {{ if gt .Params.danger_level "2"}}Dangerous{{ end }}
+                    {{ if gt .Params.danger_level "2"}}Bloody dangerous!{{ end }}
                 </span>
             </td>
             <td>
                 <span class="badge {{ if .Params.training_required  }} secondary {{end}}">
-                    {{ if .Params.training_required }} Training required before use {{ else }} Can be usedd without
+                    {{ if .Params.training_required }} Induction required before use {{ else }} May be used without
                     training {{ end }}
                 </span>
             </td>
