@@ -6,20 +6,20 @@ theme = "hacman-paper"
 [menu]
 
   [[menu.nav]]
-    identifier = "about"
+    identifier = "About"
     name = "About"
-    pre = "<i class='fa fa-heart'></i>"
+    external = false
     url = "/about/"
-    weight = -110
+    weight = 1
 
   [[menu.nav]]
     name = "Areas"
-    pre = "<i class='fa fa-road'></i>"
+    external = false
     url = "/areas/"
-    weight = -100
+    weight = 10
   
   [[menu.nav]]
     name = "Members"
-    pre = "<i class='fa fa-road'></i>"
+    external = true
     url = "http://members.hacman.org.uk"
-    weight = -100
+    weight = 20
