@@ -1,7 +1,7 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
 title = "Hackspace Manchester"
-theme = "papercss-hugo-theme"
+theme = "hacman-paper"
 
 [menu]
 
