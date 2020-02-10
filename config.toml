@@ -15,11 +15,6 @@ theme = "hacman-paper"
     name = "Areas"
     url = "/areas/"
     weight = 10
-  
-  [[menu.nav]]
-    name = "Forum"
-    url = "https://list.hacman.org.uk"
-    weight = 10
 
   [[menu.nav]]
     name = "Membership"
