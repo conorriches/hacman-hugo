@@ -8,18 +8,20 @@ theme = "hacman-paper"
   [[menu.nav]]
     identifier = "About"
     name = "About"
-    external = false
     url = "/about/"
     weight = 1
 
   [[menu.nav]]
     name = "Areas"
-    external = false
     url = "/areas/"
     weight = 10
   
   [[menu.nav]]
+    name = "Forum"
+    url = "https://list.hacman.org.uk"
+    weight = 10
+
+  [[menu.nav]]
     name = "Membership"
-    external = true
-    url = "http://members.hacman.org.uk"
+    url = "/membership/"
     weight = 20
