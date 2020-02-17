@@ -1,6 +1,5 @@
 +++
     title = "About Hackspace Manchester"
-    description =  "Test"
 +++
 
 ## Our aim
